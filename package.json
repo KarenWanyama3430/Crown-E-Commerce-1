@@ -1,0 +1,39 @@
+{
+  "name": "e-commerse",
+  "version": "1.0.0",
+  "engines": {
+    "node": "12.13.0",
+    "npm": "6.12.0"
+  },
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "nodemon server.js",
+    "build": "cd client && npm run build",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KelvinMitaki/CROWN-E-COMMERCE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KelvinMitaki/CROWN-E-COMMERCE/issues"
+  },
+  "homepage": "https://github.com/KelvinMitaki/CROWN-E-COMMERCE#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-sslify": "^1.2.0",
+    "stripe": "^8.39.2"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0"
+  }
+}

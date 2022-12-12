@@ -1,0 +1,46 @@
+.header {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 25px;
+
+  .logo-container {
+    height: 100%;
+    width: 70px;
+    padding: 25px;
+  }
+
+  .options {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+
+    .option {
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .header {
+    height: 60px;
+    margin-bottom: 20px;
+    padding: 10px;
+    .logo-container {
+      width: 50px;
+      padding: 0px;
+    }
+    .options {
+      width: 80%;
+      height: 60px;
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+  }
+}

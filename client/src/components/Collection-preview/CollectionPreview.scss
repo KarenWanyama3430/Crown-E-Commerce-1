@@ -1,0 +1,31 @@
+.collection-preview {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  .title {
+    font-size: 28px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    &:hover {
+      color: dimgrey;
+    }
+  }
+
+  .preview {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .collection-preview {
+    -webkit-box-align: center;
+    align-items: center;
+    .preview {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+  }
+}

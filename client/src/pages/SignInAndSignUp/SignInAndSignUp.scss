@@ -1,0 +1,18 @@
+.sign-in-and-sign-up {
+  flex-direction: column;
+  width: unset;
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+
+@media screen and (max-width: 800px) {
+  .sign-in-and-sign-up {
+    flex-direction: column;
+    width: unset;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+}
